@@ -4,7 +4,8 @@
 
 <img width="472" height="354" alt="Login" src="https://github.com/user-attachments/assets/3c59202d-3dd4-4a28-8d99-83395b9487b6" />
 <img width="1021" height="817" alt="Painel Master" src="https://github.com/user-attachments/assets/c13adb6c-b9ce-4a2b-8c32-48a35368f316" />
-<img width="987" height="870" alt="Check-list" src="https://github.com/user-attachments/assets/c4e978cc-8988-492e-a1ec-edcfebb3bc81" />
+<img width="1128" height="958" alt="Check-list" src="https://github.com/user-attachments/assets/5eeba86a-dcbf-4531-9d22-2029c65510bf" />
+
 
 
 ## Visão Geral
