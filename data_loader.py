@@ -1,11 +1,3 @@
-"""Leitura das bases de dados (Cronograma e Checklist).
-
-Responsável por:
-  * Ação 1.2 - montar a lista única de combinações válidas de
-    Área / Centro / Empresa / Localidade / Tipo de Centro.
-  * Ação 2.2 - alimentar as listas suspensas do formulário.
-  * Ação 2.3 / 2.5 - carregar as perguntas do checklist com seus pesos.
-"""
 from __future__ import annotations
 
 import re
