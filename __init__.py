@@ -1,1 +1,1 @@
-"""Automação do Inventário de Empreiteiras (Enel RJ)."""
+"""Automação do Inventário de Empreiteiras."""
