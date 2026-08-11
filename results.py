@@ -1,12 +1,3 @@
-"""Cálculo dos pesos, gravação dos resultados e montagem do dashboard.
-
-Cobre as Etapas 3 e 4 do plano de ação:
-  * 3.1 - vincula as respostas do formulário ao arquivo de resultados;
-  * 3.2 - monta uma tabela de cálculo (simulando SE + PROCV) por auditoria;
-  * 3.3 - calcula a nota final de cada auditoria;
-  * 4.1 - mantém a aba 'Resultado Geral' em formato de banco de dados;
-  * 4.2 - gera painéis (tabelas dinâmicas) por Empresa, Localidade e Área.
-"""
 from __future__ import annotations
 
 import shutil
