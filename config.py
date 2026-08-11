@@ -1,9 +1,3 @@
-"""Caminhos e constantes centrais da aplicação.
-
-Este módulo resolve os diretórios de dados e de saída de forma que o programa
-funcione tanto quando executado a partir do código-fonte quanto quando empacotado
-com o PyInstaller (executável .exe).
-"""
 from __future__ import annotations
 
 import os
@@ -24,12 +18,7 @@ def _base_dir() -> Path:
 
 
 def _output_dir() -> Path:
-    """Diretório onde os resultados e evidências são gravados.
-
-    Em produção pode ser sobrescrito por uma variável de ambiente para evitar
-    depender do diretório do projeto. Em desenvolvimento, grava dentro da pasta
-    do projeto. Quando empacotado, grava ao lado do executável.
-    """
+    
     override = os.environ.get("INVENTARIO_OUTPUT_ROOT", "").strip() #AINDA NÃO ESTÁ FUNCIONANDO, PRECISO TESTE#
     if override:
         return Path(override).expanduser().resolve()
@@ -92,7 +81,7 @@ USUARIOS_JSON = RESULTADOS_DIR / "usuarios.json"
 
 # Senha padrão atribuída a novos auditores cadastrados pelo Master.
 # Pode ser sobrescrita pela variável de ambiente SENHA_PADRAO (ex.: no deploy).
-SENHA_PADRAO = os.environ.get("SENHA_PADRAO", "Amara@2026")
+SENHA_PADRAO = os.environ.get("SENHA_PADRAO", "SENHA_A_DEFINIR")
 
 # Configuração SMTP para envio de relatório por e-mail
 SMTP_SERVER = os.environ.get("SMTP_SERVER", "")
