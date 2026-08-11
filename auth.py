@@ -1,20 +1,3 @@
-"""Autenticação e perfis de usuário (versão web).
-
-Armazena os usuários em um arquivo JSON simples. Cada usuário tem:
-
-- ``email``        — identificador (minúsculo);
-- ``nome``         — nome de exibição;
-- ``senha_hash`` / ``salt`` — senha protegida com PBKDF2-HMAC-SHA256;
-- ``master``       — se é usuário Master (pode liberar/cadastrar outros);
-- ``ativo``        — SIM/NÃO: se pode abrir o questionário.
-
-Regras de negócio:
-- Só usuários ``ativo == True`` conseguem abrir o checklist.
-- Usuários Master podem cadastrar novos auditores, liberar/bloquear (SIM/NÃO)
-  e conceder/retirar o poder de Master de outros e-mails.
-- Na primeira execução, os e-mails de ``config.MASTER_EMAILS_INICIAIS`` são
-  criados como Master já liberados, com a ``config.SENHA_PADRAO``.
-"""
 from __future__ import annotations
 
 import hashlib
