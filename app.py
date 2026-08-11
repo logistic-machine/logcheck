@@ -156,8 +156,7 @@ class InventarioApp(tk.Tk):
         barra.pack(fill="x")
         marca = " · Master" if self.usuario.master else ""
         ttk.Label(barra,
-                  text=f"Conectado: {self.usuario.nome} ({self.usuario.email}){marca}" #Tirar duvida se o responsavél é o amoxarife que está realizando a avaliação?#
-                  ).pack(side="left")
+                  text=f"Conectado: {self.usuario.nome} ({self.usuario.email}){marca}"
         ttk.Button(barra, text="Sair", command=self._sair).pack(side="right")
         if self.usuario.master:
             ttk.Button(barra, text="Painel Master",
